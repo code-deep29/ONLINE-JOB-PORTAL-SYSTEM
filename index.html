@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFinder - Your Dream Job Portal</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Job<span>Finder</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#jobs">Browse Jobs</a></li>
+            <li><a href="#">Recruiters</a></li>
+            <li><button class="login-btn" onclick="toggleLogin()">Login / Register</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Job Today</h1>
+            <p>Connecting Talent with Opportunities</p>
+            
+            <div class="search-bar">
+                <input type="text" id="job-role" placeholder="Job Role (e.g. Java Developer)">
+                <input type="text" id="location" placeholder="Location (e.g. Noida)">
+                <button onclick="searchJobs()">Search Jobs</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="jobs" class="container">
+        <h2 class="section-title">Featured Jobs</h2>
+        <div class="job-grid">
+            
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p class="company">Tech Solutions Inc.</p>
+                <div class="details">
+                    <span>📍 Bangalore</span>
+                    <span>💼 0-1 Yrs</span>
+                    <span>💰 4-6 LPA</span>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Python Backend Engineer</h3>
+                <p class="company">Data Systems</p>
+                <div class="details">
+                    <span>📍 Pune (Remote)</span>
+                    <span>💼 2+ Yrs</span>
+                    <span>💰 8-12 LPA</span>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>HR Executive</h3>
+                <p class="company">Global Services</p>
+                <div class="details">
+                    <span>📍 Delhi NCR</span>
+                    <span>💼 Fresher</span>
+                    <span>💰 3 LPA</span>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JobFinder Portal. B.Tech Mini Project.</p>
+        
+        <div style="margin-top: 15px;">
+            <p>Name :- PRATHAM DEEP</p>
+            <p>Roll No. :- 063</p>
+            <p>Reg. I'd :- PIET24CD063</p>
+        </div>
+    </footer>
+
+    <div class="overlay" id="loginOverlay">
+        <div class="login-box">
+            <h2>User Login</h2>
+            <input type="text" placeholder="Enter Email">
+            <input type="password" placeholder="Enter Password">
+            <button class="primary-btn">Login</button>
+            <button class="close-btn" onclick="toggleLogin()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
